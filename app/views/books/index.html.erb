@@ -23,7 +23,7 @@
         <td><img src="<%= book.img %>" alt"表紙画像" class="img-responsive"></td>
         <td><%= book.title %></td>
         <td><%= book.author %></td>
-        <td><%= book.price %></td>
+        <td><%= number_to_currency(book.price, unit: '¥', precision: 0) %></td>
         <td><%= book.publisher %></td>
         <td><%= book.date %></td>
         <td><%= book.isbn %></td>
